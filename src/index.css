@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  @apply border text-sm border-gray-300 px-3 py-1 rounded-md hover:bg-yellow-400 hover:border-orange-400 font-medium transition-all shadow active:translate-y-px;
+}
+
+button {
+  @apply outline-none;
+}
+
+h1 {
+  @apply text-xl font-medium;
+}
+
+h2 {
+  @apply font-medium;
+}
+
+.section {
+  @apply mt-4 max-w-sm w-full bg-gray-300 rounded-md p-3 relative;
+}
+.section-label {
+  @apply absolute -top-1 left-0 bg-gray-800 text-white text-xs px-3 py-1 rounded-md rounded-bl-none w-fit uppercase;
+}
